@@ -13,12 +13,18 @@
  *= require_tree .
  *= require_self
  */
+*{
+    box-sizing: border-box;
+}
+ body{
+     font-family: "Avenir Next","Hiragino Sans",sans-serif;
+ }
 header{
     background-color: aqua;
-    height: 60px;
+    height: 80px;
     padding:0;
 }
-li{
+header li{
     padding-top: 20px;
     padding-right: 30px;
     float: right;
