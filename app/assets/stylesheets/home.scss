@@ -8,9 +8,13 @@
 }
 
 h1 {
-    color: skyblue;
+    color: white;
     text-align: center;
     letter-spacing: 15px;
     line-height: 120px;
     font-size: 60px;
+}
+h1:hover{
+    color: yellow;
+    transition: 0.3s;
 }
