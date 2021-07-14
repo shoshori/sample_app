@@ -1,14 +1,16 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.top-wrapper{
-height: 240px;
-background-color: powderblue;
+.top-wrapper {
+    height: 720px;
+    background-color: powderblue;
+    background-image: url("/burger.jpg");
 }
 
-h1{
-    color:red;
+h1 {
+    color: skyblue;
     text-align: center;
     letter-spacing: 15px;
-    line-height:120px
+    line-height: 120px;
+    font-size: 60px;
 }
