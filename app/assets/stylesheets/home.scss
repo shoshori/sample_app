@@ -2,20 +2,28 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .top-wrapper {
-    padding: 0;
+    padding-top: 60px;
     height: 720px;
     background-color: powderblue;
-    background-image: url("/burger.jpg");
+    background-image: url("/top.jpg"); 
+    background-size: cover;
+    background-position: center bottom;
 }
 
 h1 {
-    color: white;
+    color: black;
     text-align: center;
     letter-spacing: 15px;
-    line-height: 120px;
-    font-size: 60px;
+    background: #dbebf8;
+    opacity: 0.5;
+    vertical-align: middle;
+    font-size: 80px;
+    border-radius: 25px 0 0 25px;
+    border: dashed 1px #96c2fe;
+    box-shadow: 0 0 0 5px #dfefff;
 }
 h1:hover{
-    color: yellow;
-    transition: 0.3s;
+    color: darkblue;
+    opacity: 0.8;
+    transition: 0.5s;
 }
