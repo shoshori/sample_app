@@ -2,8 +2,9 @@
     <div class="container">
         <div class="posts-show-item">
             <%= @post.content %>
-            <%= @post.created_at %>
-            <h2>ここは詳細ぺーじ<%="#{@id}です"%></h2>
+            <br>
+            <div class="tweettime"><%= @post.created_at.to_s(:datetime_jp) %></div>
+            <h6>//ここは詳細ページ,postのidは　<%="#{@post.id}　です"%></h6>
         </div>
     </div>
 </div>
