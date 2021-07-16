@@ -1,7 +1,9 @@
 <div class="main-posts-index">
     <div class="container">
+        <% @posts.each do |post|%>
         <div class="posts-index-item">
-            ここに投稿がはいります
+            <%=post.content %>
         </div>
+        <% end %>
     </div>
 </div>
