@@ -1,6 +1,67 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+ body{
+     font-family: "Avenir Next","Hiragino Sans",sans-serif;
+ }
+.container{
+    max-width: 600px;
+    margin: 80px auto;
+}
+ a{
+     text-decoration: none;
+ }
+header{
+    background-color:darkcyan;
+    height: 70px;
+    padding:0;
+    margin: 0;
+    width: 100%;
+    color: cornsilk;
+}
+
+.header-logo a{
+    float: left;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 70px;
+    letter-spacing: 20px;
+    font-family: fantasy;
+    padding-left:30px;
+    color: white;
+}
+.header-logo a:hover{
+    color: white;
+}
+
+header li{
+    margin-right: 30px;
+    float: right;
+    list-style: none;
+    line-height: 70px;
+}
+.header-items{
+    display: block;
+    padding: 0 10px 0 10px;
+}
+header a{
+    color:white;
+}
+header a:hover{
+    color: black;
+}
+header li:hover{
+    background-color: gainsboro;
+    transition: 0.2s;
+    border-radius: 20px;
+}
+
 .top-wrapper {
     padding-top: 60px;
     height: 720px;
@@ -10,7 +71,7 @@
     background-position: center bottom;
 }
 
-h1 {
+.copy {
     color: black;
     text-align: center;
     letter-spacing: 15px;
@@ -22,8 +83,45 @@ h1 {
     border: dashed 1px #96c2fe;
     box-shadow: 0 0 0 5px #dfefff;
 }
-h1:hover{
+.copy:hover{
     color: darkblue;
     opacity: 0.8;
-    transition: 0.5s;
+    transition: 0.1s;
+}
+
+.flash{
+    color:white;
+    background-color: cadetblue;
+    text-align: center;
+    position: absolute;
+    top: 80px;
+    z-index: 10;
+    width: 100%;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.form{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.form-heading{
+    font-size: 48px;
+}
+.form textarea{
+    width: 100%;
+    min-height: 110px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.form input{
+    width: 100%;
+    border-radius: 5px;
+}
+.form-error{
+    color: orange;
+}
+.form-body{
+    padding: 30px;
 }
