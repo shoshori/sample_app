@@ -6,5 +6,8 @@
             <div class="tweettime"><%= @post.created_at.to_s(:datetime_jp) %></div>
             <h6>//ここは詳細ページ,postのidは　<%="#{@post.id}　です"%></h6>
         </div>
+        <div class="post-menus">
+        <%= link_to("編集","/posts/#{@post.id}/edit")%>
+        </div>
     </div>
 </div>
