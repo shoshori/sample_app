@@ -15,13 +15,12 @@
   </div>
   <ul>
     <li>
-      <%= link_to "新規投稿","/posts/new",class:"header-items"%></li>
-    <li>
       <%= link_to "Shoritterとは","/about",class:"header-items" %></li>
     <li>
-      <%= link_to "ぼやき一覧","/posts/index",class:"header-items" %></li>
+      <%= link_to "新規投稿","/posts/new",class:"header-items"%></li>
     <li>
-      <%= link_to "Shoritter topへ","/",class:"header-items" %></li>
+      <%= link_to "ぼやき一覧","/posts/index",class:"header-items" %></li>
+
 </header>
 <% if flash[:notice]%>
 <div class="flash">

@@ -29,9 +29,9 @@ header{
 .header-logo a{
     float: left;
     font-weight: 300;
-    font-size: 50px;
+    font-size: 40px;
     line-height: 70px;
-    letter-spacing: 20px;
+    letter-spacing: 10px;
     font-family: fantasy;
     padding-left:30px;
     color: white;
@@ -41,14 +41,16 @@ header{
 }
 
 header li{
-    margin-right: 30px;
+    margin-right: 20px;
     float: right;
     list-style: none;
     line-height: 70px;
+    background-color: darkcyan;
+    border-radius: 20px;
 }
 .header-items{
     display: block;
-    padding: 0 10px 0 10px;
+    padding: 0 5px 0 5px;
 }
 header a{
     color:white;
@@ -78,14 +80,15 @@ header li:hover{
     background: #dbebf8;
     opacity: 0.5;
     vertical-align: middle;
-    font-size: 80px;
+    font-size: 40px;
     border-radius: 25px 0 0 25px;
     border: dashed 1px #96c2fe;
     box-shadow: 0 0 0 5px #dfefff;
+    margin-bottom:100px;
 }
 .copy:hover{
     color: darkblue;
-    opacity: 0.8;
+    opacity: 0.5;
     transition: 0.1s;
 }
 
