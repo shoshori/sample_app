@@ -5622,3 +5622,29 @@ Processing by PostsController#show as HTML
 Completed 200 OK in 120ms (Views: 110.3ms | ActiveRecord: 0.4ms)
 
 
+<<<<<<< Updated upstream
+=======
+Started GET "/" for ::1 at 2021-07-18 08:48:08 +0900
+Processing by HomeController#top as HTML
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 332ms (Views: 325.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-07-18 08:48:09 +0900
+Processing by HomeController#top as HTML
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 104ms (Views: 98.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2021-07-18 08:48:12 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 159ms (Views: 85.6ms | ActiveRecord: 10.6ms)
+
+
+>>>>>>> Stashed changes
