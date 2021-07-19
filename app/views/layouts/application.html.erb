@@ -10,20 +10,30 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
 <header>
-  <div class="header-logo">Shoritter</div>
+  <div class="header-logo">
+    <%= link_to("Shoritter","/")%>
+  </div>
   <ul>
-    <li>
-      <%= link_to "新規投稿","/posts/new",class:"header-items"%></li>
     <li>
       <%= link_to "Shoritterとは","/about",class:"header-items" %></li>
     <li>
       <%= link_to "ぼやき一覧","/posts/index",class:"header-items" %></li>
-    <li>
-      <%= link_to "Shoritter topへ","/",class:"header-items" %></li>
+
 </header>
+<% if flash[:notice]%>
+<div class="flash">
+  <%=flash[:notice]%>
+</div>
+<%end%>
 
 <body>
   <%= yield %>
-</body>
+
+  <footer>
+  <ul>
+  <li>
+  <%= link_to "New✍","/posts/new",class:"btn footer-items"%></li></ul>
+  </footer>
+  </body>
 
 </html>

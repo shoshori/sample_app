@@ -1,6 +1,70 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+ body{
+     font-family: "Avenir Next","Hiragino Sans",sans-serif;
+ }
+.container{
+    max-width: 600px;
+    margin: 80px auto;
+}
+ a{
+     text-decoration: none;
+ }
+header{
+    background-color:darkblue;
+    height: 70px;
+    padding:0;
+    margin: 0;
+    width: 100%;
+    color: cornsilk;
+    
+}
+
+.header-logo a{
+    float: left;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 70px;
+    letter-spacing: 5px;
+    font-family: fantasy;
+    padding-left:25px;
+    color: white;
+}
+.header-logo a:hover{
+    color: white;
+}
+
+header li{
+    margin-right: 10px;
+    float: right;
+    list-style: none;
+    line-height: 70px;
+    background-color: darkblue;
+    border-radius: 20px;
+}
+.header-items{
+    display: inline-block;
+    padding: 0 5px 0 5px;
+}
+header a{
+    color:white;
+}
+header a:hover{
+    color: black;
+}
+header li:hover{
+    background-color: gainsboro;
+    transition: 0.2s;
+    border-radius: 20px;
+}
+
 .top-wrapper {
     padding-top: 60px;
     height: 720px;
@@ -10,20 +74,90 @@
     background-position: center bottom;
 }
 
-h1 {
+.copy {
     color: black;
     text-align: center;
     letter-spacing: 15px;
     background: #dbebf8;
     opacity: 0.5;
     vertical-align: middle;
-    font-size: 80px;
+    font-size: 40px;
     border-radius: 25px 0 0 25px;
     border: dashed 1px #96c2fe;
     box-shadow: 0 0 0 5px #dfefff;
+    margin-bottom:100px;
 }
-h1:hover{
+.copy:hover{
     color: darkblue;
+    opacity: 0.5;
+    transition: 0.1s;
+}
+
+.flash{
+    color:white;
+    background-color: cadetblue;
+    text-align: center;
+    top: 90px;
+    z-index: 10;
+    width: 100%;
+    font-size: 14px;
+    padding: 10px 0;
     opacity: 0.8;
-    transition: 0.5s;
+}
+
+.form{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.form-heading{
+    font-size: 48px;
+}
+.form textarea{
+    width: 100%;
+    min-height: 110px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.form input{
+    width: 100%;
+    border-radius: 5px;
+}
+.form-error{
+    color: orange;
+}
+.form-body{
+    padding: 30px;
+}
+
+footer{
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+}
+
+footer li{
+    list-style: none;
+    line-height: 30px;
+    background-color: darkblue;
+    border-radius: 50px;
+    font-size: 18px;
+    box-shadow: 0 0 0 2px  blue;
+}
+
+.btn{
+    display: inline-block;
+    padding: 8px 24px;
+}
+
+footer a{
+    color:white;
+}
+footer a:hover{
+    color: black;
+}
+footer li:hover{
+    background-color: gainsboro;
+    transition: 0.2s;
+    border-radius: 50px;
 }
