@@ -17,8 +17,6 @@
     <li>
       <%= link_to "Shoritterとは","/about",class:"header-items" %></li>
     <li>
-      <%= link_to "新規投稿","/posts/new",class:"header-items"%></li>
-    <li>
       <%= link_to "ぼやき一覧","/posts/index",class:"header-items" %></li>
 
 </header>
@@ -30,6 +28,12 @@
 
 <body>
   <%= yield %>
-</body>
+
+  <footer>
+  <ul>
+  <li>
+  <%= link_to "New✍","/posts/new",class:"btn footer-items"%></li></ul>
+  </footer>
+  </body>
 
 </html>
