@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 
+
+
+
+
 <head>
   <title>Shoritter</title>
   <%= csrf_meta_tags %>
@@ -22,8 +26,10 @@
       <%= link_to "ユーザー一覧","/users/index",class: "header-items"%></li>
     <li>
       <%= link_to "ユーザー登録","/signup",class: "header-items"%></li>
-  </ul>
-
+    <li>
+      <%= link_to "ログイン", "/users/login_form",class: "header-items"%></li>
+      </ul>
+      
 </header>
 <% if flash[:notice]%>
 <div class="flash">
