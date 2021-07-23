@@ -1,11 +1,13 @@
 class PostsController < ApplicationController
+ before_action :set_current_user
+ 
   def index
     @posts = Post.all
   end
   
   def show
     @post = Post.find_by(id: params[:id])
-    @user = User.find_by(id: @post.user_id)
+    @user = @post.user
   end
 
   def new
