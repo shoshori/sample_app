@@ -32,6 +32,7 @@ before_action :set_current_user
   def create
     @user = User.new(
       name: params[:name],
+      image_name: "default_user.jpg",
       password: params[:password]
     )
     if @user.save
